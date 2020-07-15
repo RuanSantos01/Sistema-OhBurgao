@@ -38,7 +38,7 @@ body{
 	border-bottom-left-radius: 15px;
 
 
-	left: 60%;
+	left: 0;
 }
 
 .imagem-primeira-coluna{
@@ -67,7 +67,6 @@ body{
 
 .primeiro-conteudo{
 	display: flex;
-	display: none;
 }
 
 .primeiro-conteudo .segunda-coluna{
@@ -114,14 +113,28 @@ body{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	z-index: -1;
 }
 
 .segundo-conteudo .segunda-coluna{
 	width: 40%;
+	z-index: -1;
 }
 
 .padding{
 	padding: 6px;
 }
 
+.logar .primeiro-conteudo .primeira-coluna,
+.logar .primeiro-conteudo .segunda-coluna{
+	z-index: -1;
+}
 
+.logar .segundo-conteudo .primeira-coluna,
+.logar .segundo-conteudo .segunda-coluna{
+	z-index: 11;
+}
+
+.logar .conteudo::before{
+	left: 60%;
+}
