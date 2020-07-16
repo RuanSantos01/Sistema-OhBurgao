@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sistema OhBurgão</title>
+        <link rel="stylesheet" href="css/estilo.css" type="text/css">
+        <script src="https://kit.fontawesome.com/3bedf2e1d1.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div class="cabecalho">
+            <span class="titulo-principal"><h1>Burgão Gourmet Raiz</h1></span>
+        </div>
+
+        <div id="container"> <!-- INÍCIO CONTAINER PRINCIPAL -->
+            <div class="primeira-coluna"> <!-- INÍCIO PRIMEIRA-COLUNA -->
+                <form action=""> <!-- INÍCIO FORM-->
+                    <div class="box-titulo"> 
+                        <label class="titulo"> CLIENTE </label>
+                    </div>
+                    <div class="cliente">
+                        <div class="formulario">
+                            <label class="organizar">CPF: </label>
+                            <input type="text" placeholder="CPF">
+                            <input type="button" value="SRC">
+                        </div>
+                        <div class="formulario">
+                            <label class="organizar">Nome: </label>
+                            <input type="text" placeholder="Nome do Cliente">
+                        </div>   
+                        <div class="formulario">
+                            <label class="organizar">Telefone: </label>
+                            <input type="text" placeholder="Telefone">
+                        </div>
+                        <div class="formulario">
+                            <label class="organizar">Endereço: </label>
+                            <input type="text" placeholder="Endereço">
+                        </div>                           
+                    </div>
+
+                    <div class="box-titulo">
+                        <label class="titulo"> PEDIDO </label>
+                    </div>
+                    <div class="pedido">
+                        <div class="formulario">
+                            <label class=organizar>Nome: </label>
+                            <select name="nome-burguer" id="nome-burguer">
+                                <option value="agridoce">Agridoce</option>
+                                <option value="garlic">Garlic</option>
+                                <option value="vegetariano">Vegetariano</option>
+                                <option value="costela">Costela</option>
+                                <option value="frango">Frango</option>
+                            </select>
+                        </div>
+
+                        <div class="formulario">
+                            <label class="organizar">Carne: </label>
+                            <select name="ponto-carne" id="ponto-carne">
+                                <option value="mal-passada">Mal Passada</option>
+                                <option value="ao-ponto">Ao Ponto</option>
+                                <option value="bem-passada">Bem passada</option>
+                            </select>
+                        </div>
+                        <div class="formulario">
+                            <label class="organizar">Pão: </label>
+                            <select name="pao" id="pao">
+                                <option value="brioche">Brioche</option>
+                                <option value="australiano">Australiano</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="caixa-texto">
+                        <textarea name="observacoes" id="observacoes" cols="44" rows="8" placeholder="Observações referentes ao pedido.."
+                        ></textarea>
+                    </div>
+
+                    <div class="caixa-texto">
+                        <textarea name="observacoes1" id="observacoes1" cols="44" rows="8" placeholder="Observações referentes ao burguer.."></textarea>
+                    </div>
+
+                    <div class="btn">
+                        <input type="submit" value="Finalizar pedido" class="btn-finalizar">
+                    </div>
+                </form> <!-- FIM FORM-->
+            </div> <!-- FIM PRIMEIRA COLUNA -->
+
+            <div class="segunda-coluna"> <!-- INÍCIO SEGUNDA COLUNA -->
+
+            </div> <!-- FIM SEGUNDA COLUNA -->
+        </div> <!-- FIM CONTAINER PRINCIPAL-->
+        <script src="js/app.js"></script>
+    </body>
+</html>
